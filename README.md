@@ -1,2 +1,5 @@
-# JMP7_InfrastructureAsCode
-Infrastructure as code
+# Infrastructure as code
+
+### TECHNOLOGY STACK
+Vagrant
+Docker
