@@ -1,0 +1,16 @@
+# .bash_profile
+export JAVA_HOME=/opt/jdk1.8.0_131
+export JRE_HOME=/opt/jdk1.8.0_131/jre
+export PATH=$PATH:/opt/jdk1.8.0_131/bin:/opt/jdk1.8.0_131/jre/bin
+export PATH=$PATH:/opt/gradle/gradle-3.5/bin
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
