@@ -37,6 +37,16 @@ public class MentorService {
                 }).collect(Collectors.toList());
     }
 
+    public List<MentorDto> findAllMentors() {
+        List<Mentor> mentors = mentorRepository.findAll();
+        return mentors.stream()
+                .map(mentor -> {
+                    MentorDto dto = new MentorDto();
+                    BeanUtils.copyProperties(mentor, dto);
+                    return dto;
+                }).collect(Collectors.toList());
+    }
+
     public List<MenteeDto> findMentees(int id) {
         Mentor mentor = mentorRepository.findOne(id);
         return mentor.getMentees()
