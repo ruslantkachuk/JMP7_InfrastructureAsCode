@@ -36,14 +36,8 @@ public class MentorController {
 
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(method = RequestMethod.GET)
-    public List<MentorDto> findBySkill(@RequestParam("skill") String skill) {
+    public List<MentorDto> findBySkill(@RequestParam(name = "skill", required = false) String skill) {
         return mentorService.findBySkill(skill);
-    }
-
-    @ResponseStatus(HttpStatus.OK)
-    @RequestMapping(method = RequestMethod.GET)
-    public List<MentorDto> findAllMentors() {
-        return mentorService.findAllMentors();
     }
 
     @ResponseStatus(HttpStatus.CREATED)

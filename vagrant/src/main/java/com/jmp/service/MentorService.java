@@ -8,6 +8,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import com.jmp.dto.MenteeDto;
 import com.jmp.dto.MentorDto;
@@ -28,17 +29,12 @@ public class MentorService {
     }
 
     public List<MentorDto> findBySkill(String skill) {
-        List<Mentor> mentors = mentorRepository.findBySkillAndOrderByLevel(skill);
-        return mentors.stream()
-                .map(mentor -> {
-                    MentorDto dto = new MentorDto();
-                    BeanUtils.copyProperties(mentor, dto);
-                    return dto;
-                }).collect(Collectors.toList());
-    }
-
-    public List<MentorDto> findAllMentors() {
-        List<Mentor> mentors = mentorRepository.findAll();
+        List<Mentor> mentors;
+        if (StringUtils.isEmpty(skill)){
+            mentors = mentorRepository.findAll();
+        } else {
+            mentors = mentorRepository.findBySkillAndOrderByLevel(skill);
+        }
         return mentors.stream()
                 .map(mentor -> {
                     MentorDto dto = new MentorDto();
