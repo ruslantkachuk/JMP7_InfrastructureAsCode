@@ -1,5 +1,5 @@
 # Infrastructure as code
 
 ### TECHNOLOGY STACK
- - Vagrant
- - Docker
+ - Vagrant: follow the vagrant directory
+ - Docker: follow the docker directory
