@@ -2,7 +2,9 @@
 java -version
 mkdir /home/vagrant/jmp7
 git clone https://github.com/ruslantkachuk/JMP7_InfrastructureAsCode.git /home/vagrant/jmp7
-cd /home/vagrant/jmp7
+cd /home/vagrant/jmp7/vagrant
 gradle build
-cp /home/vagrant/jmp7/build/libs/jmp.war /opt/tomcat/webapps
+rm -r /opt/tomcat/webapps/ROOT
+unzip -o /home/vagrant/jmp7/vagrant/build/libs/jmp.war -d /home/vagrant/jmp7/vagrant/build/libs/jmp
+ln -s /home/vagrant/jmp7/vagrant/build/libs/jmp /opt/tomcat/webapps/ROOT
 /opt/tomcat/bin/startup.sh

@@ -14,11 +14,11 @@ wget https://services.gradle.org/distributions/gradle-3.5-all.zip
 mkdir /opt/gradle
 unzip -d /opt/gradle gradle-3.5-all.zip
 # Install Tomcat 8
-wget http://www.eu.apache.org/dist/tomcat/tomcat-8/v8.5.14/bin/apache-tomcat-8.5.14.tar.gz
+wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.5.14/bin/apache-tomcat-8.5.14.tar.gz
 tar xvf apache-tomcat-8.5.14.tar.gz
 mv apache-tomcat-8.5.14 tomcat
 # Download HSQLDB JDBC Driver
-wget https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_2_4/hsqldb-2.4.0.zip
+wget https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_2_4/hsqldb-2.4.0.zip/download?use_mirror=pilotfiber -O hsqldb-2.4.0.zip
 mkdir /opt/hsqldb
 unzip -d /opt/hsqldb hsqldb-2.4.0.zip
 cp /opt/hsqldb/hsqldb-2.4.0/hsqldb/lib/hsqldb.jar /opt/tomcat/lib
