@@ -1,22 +1,12 @@
 tomcat:
-  build: .
+  build: ./tomcat
   ports:
   - "8080:8080"
   - "8000:8000"
-  # links:
-  # - mariadb
-  # volumes:
-  # - "/Users/ruslan/MAIN/Projects/Orke/gitcode/ctco-orke/frontier/webapp/target/frontier:/opt/tomcat/webapps/ROOT"
-  # - "/tmp/frontier/logs/:/opt/tomcat/logs/"
-  mem_limit: 4024m
-#
-# nginx:
-#   image: nginx
-#   links:
-#     - tomcat
-#   ports:
-#   - "80:80"
-#   volumes:
-#   - "./conf/:/etc/nginx"
-#   - "/Users/ruslan/MAIN/Projects/Orke/gitcode/ctco-orke/frontier/web-parent/web/src/main/webapp/js/:/usr/share/nginx/html/js/:ro"
-#   mem_limit: 512m
+  mem_limit: 1024m
+angular:
+  build: ./angular
+  ports:
+  - "3000:3000"
+  - "3001:3001"
+  mem_limit: 512m
