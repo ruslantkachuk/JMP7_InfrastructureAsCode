@@ -1,0 +1,1 @@
+{"version":3,"file":"sidebar-routes.config.js","sourceRoot":"","sources":["sidebar-routes.config.ts"],"names":[],"mappings":";;AAAA,uDAAyD;AAE5C,QAAA,MAAM,GAAgB;IAC/B,EAAE,IAAI,EAAE,QAAQ,EAAE,KAAK,EAAE,QAAQ,EAAE,QAAQ,EAAE,2BAAQ,CAAC,IAAI,EAAE,IAAI,EAAC,SAAS,EAAE;IAC5E,EAAE,IAAI,EAAE,aAAa,EAAE,KAAK,EAAE,aAAa,EAAE,QAAQ,EAAE,2BAAQ,CAAC,IAAI,EAAE,IAAI,EAAC,kBAAkB,EAAE;CAClG,CAAC"}

@@ -1,0 +1,46 @@
+{
+  "name": "JMP",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@agm/core": "~1.0.0-beta.0",
+    "@angular/common": "~4.1.1",
+    "@angular/compiler": "~4.1.1",
+    "@angular/core": "~4.1.1",
+    "@angular/forms": "~4.1.1",
+    "@angular/http": "~4.1.1",
+    "@angular/platform-browser": "~4.1.1",
+    "@angular/platform-browser-dynamic": "~4.1.1",
+    "@angular/router": "~4.1.1",
+    "@angular/upgrade": "~4.1.1",
+    "@types/bootstrap-notify": "^3.1.30",
+    "@types/lodash": "^4.14.64",
+    "angular-in-memory-web-api": "~0.3.2",
+    "chartist": "~0.11.0",
+    "core-js": "~2.4.1",
+    "jquery": "~3.2.1",
+    "lodash": "^4.17.4",
+    "ng-chartist": "~1.1.0",
+    "ng2-datetime": "^1.2.2",
+    "ngx-bootstrap": "~1.6.6",
+    "ngx-resource": "2.2.1",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "5.3.1",
+    "systemjs": "~0.20.12",
+    "zone.js": "^0.8.10"
+  },
+  "devDependencies": {
+    "@types/chartist": "~0.9.33",
+    "@types/core-js": "~0.9.34",
+    "@types/jquery": "~2.0.34",
+    "@types/node": "~7.0.18",
+    "concurrently": "~3.4.0",
+    "lite-server": "~2.3.0",
+    "typescript": "~2.3.2"
+  }
+}
