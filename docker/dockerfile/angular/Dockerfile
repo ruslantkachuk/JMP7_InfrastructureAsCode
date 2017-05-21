@@ -15,10 +15,10 @@ RUN mkdir /app && cd $_
 RUN git clone https://github.com/ruslantkachuk/JMP7_InfrastructureAsCode.git /app
 
 # Install packages
-RUN npm install --prefix -p /app/docker/web
+RUN npm install --prefix /app/docker/web
 
 EXPOSE 3000
 EXPOSE 3001
 
 # Launch
-CMD npm start --prefix -p /app/docker/web
+CMD npm start --prefix /app/docker/web
