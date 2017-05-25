@@ -6,7 +6,7 @@ Vagrant is a tool for building and managing virtual machine environments, theref
 
 **Step 2**: install Vagrant https://www.vagrantup.com
 
-**Step 3**: clone the current progect and go to <project>/vagrant/vagrantfile directory
+**Step 3**: clone the current project and go to <project>/vagrant/vagrantfile directory
 
 **Step 4**: run vagrant command from command line: vagrant up
 
